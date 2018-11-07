@@ -1,4 +1,7 @@
 <input [(ngModel)]="searchTerm">
 <button (click)="search()">search</button>
+<a routerLink="/history">history</a>
 <app-giphy-results [term]=searchTerm></app-giphy-results> 
 <app-wiki-results [term]=searchTerm></app-wiki-results>
+
+<router-outlet></router-outlet>
