@@ -14,7 +14,9 @@ export class WikiResultsComponent implements OnInit {
   term:string;
 
   results:any[]; 
-
+  clear() {
+  	this.results = undefined;
+  }
   ngOnInit() {
   }
   sayHi() {console.log("Hi from child");}
@@ -29,5 +31,4 @@ export class WikiResultsComponent implements OnInit {
   ngOnChanges(changes:SimpleChanges) {
   	//if (this.term != undefined) this.term = this.term.toUpperCase();
   }
-
 }

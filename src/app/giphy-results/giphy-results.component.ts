@@ -11,6 +11,9 @@ export class GiphyResultsComponent implements OnInit {
   constructor(private giphy: GiphyService ) { }
   @Input() term:string;
   url:string;
+  clear() {
+  	this.url=undefined;
+  }
   search() {
   	this.giphy.search(this.term)
   	.subscribe(r => {
