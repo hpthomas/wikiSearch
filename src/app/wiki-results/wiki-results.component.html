@@ -1,6 +1,6 @@
 <div *ngIf="results!=undefined">
-	<ul>
-		<li *ngFor="let result of results">
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let result of results">
 			<h1>{{result["title"]}}</h1>
 			<div [innerHTML]="result['snippet']"></div>
 		</li>
